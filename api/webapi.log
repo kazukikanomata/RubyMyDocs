@@ -1,0 +1,3 @@
+# Logfile created on 2023-07-03 15:41:30 +0900 by logger.rb/66358
+E, [2023-07-03T15:41:30.721823 #32953] ERROR -- : Failed to open TCP connection to mogulla3.com:4567 (getaddrinfo: nodename nor servname provided, or not known)
+E, [2023-07-03T15:43:04.012756 #33112] ERROR -- : Failed to open TCP connection to mogulla3.com:4567 (getaddrinfo: nodename nor servname provided, or not known)
