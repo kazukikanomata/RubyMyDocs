@@ -1,4 +1,10 @@
 # Ruby
+RuboCopというgemを使うと、自分の書いたコードが標準的なコーディング規約に準拠しているか自動的にチェックしてくれます。
+
+参考：https://qiita.com/tomohiii/items/1a17018b5a48b8284a8b
+
+gemに関する情報は
+
 
 ## 意識すべきこと
 
@@ -36,7 +42,6 @@ h[x:foo] 'x'=>'foo'
 
 Step
 1. AWS Inspctor APIのクレデンシャルを取得する
-   -   
 2. カスタムスクリプトを作成する
 3. Slackに通知するための設定
 4. 定期的な実行を設定する
@@ -44,29 +49,29 @@ Step
 ## TODO　→ あとでissueに起こす。
 
 - Rubyの文法的復習
-Cons: これ実装で絶対使うよな。デバックで使いたいをまとめる。
-How:　revengeファイルを作った実装に必要なことを復習していこう
+   - Cons: これ実装で絶対使うよな。デバックで使いたいことをまとめる
+   - How:　revengeファイルを作った実装に必要なことを復習していこう
 
 - AWS for Rubyをinstallして使ってみる。
-Cons: 基本的な設定を理解する
-Cons→Concent: Inspector APIの呼び出しやSlackへの通知に関連するメソッドの使い方を学ぶ
-How: AWS-sdkを参照　https://docs.aws.amazon.com/sdk-for-ruby/
+   - Cons: 基本的な設定を理解する
+   - Cons→Concent: Inspector APIの呼び出しやSlackへの通知に関連するメソッドの使い方を学ぶ
+   - How: AWS-sdkを参照　https://docs.aws.amazon.com/sdk-for-ruby/
 
 - Slackへの通知をする
 
-Cons: SlackのWebhookを利用し、メッセージを送信する方法を学びます。Slack Webhookのドキュメントを参照して、メッセージのフォーマットや送信方法を把握
-How:公式 https://api.slack.com/messaging/webhooks
+   - Cons: SlackのWebhookを利用し、メッセージを送信する方法を学びます。Slack Webhookのドキュメントを参照して、メッセージのフォーマットや送信方法を把握
+   - How: https://api.slack.com/messaging/webhooks
 
 - Lambda関数の作成とdeploy
 
-Cons: トリガーの設定・デプロイの流れを意識する。
-How: https://docs.aws.amazon.com/lambda/index.html
+   - Cons: トリガーの設定・デプロイの流れを意識する。
+   - How: https://docs.aws.amazon.com/lambda/index.html
 
 - CloudWatch Eventsを使用し、イベントルールを作成やスケジュール設定について理解する。
 
-Cons: 実装にあたって、週一回Lambda叩けるような設定とかできそうかな
-How: 
+   - Cons: 実装にあたって、週一回Lambda叩けるような設定とかできそうかな
+   - How: 
 
 -  権限周りの設定 IAM
-Cons: アクセス権限の割り当てを考える。
-How:
+   - Cons: アクセス権限の割り当てを考える。
+   - How:
