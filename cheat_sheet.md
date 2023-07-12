@@ -1,11 +1,16 @@
-# 文字に変数を混ぜる
-# ""ダブルクオーテーションかつ#{変数名}で囲む
+### 文字に変数を混ぜる
+
+- ""ダブルクオーテーションかつ#{変数名}で囲む
+
+```
 name = 'me'
 puts "It's #{name} mario"
+```
 
-#  if else
-# =の数やendで締めくくることを忘れずに。
+###  if else
+- =の数やendで締めくくることを忘れずに。
 
+```
 if country == 'japan'
     puts "#{country} こんにちは"
 elsif country == 'us'
@@ -15,8 +20,11 @@ elsif country == 'italy'
 else 
     puts '??'
 end
+```
 
-# case 分の場合
+- case 分の場合
+
+```
 case country
 when 'japan'
     'こんにちは'
@@ -27,33 +35,43 @@ when 'italy'
 else
     '???'    
 end
+```
 
-# nilの書き方
+- nilの書き方
+
+```
 if !user
     "nilです~"
 end
+```
 
-# 破壊的メソッド
+- 破壊的メソッド
+
+```
 a ='ruby'
 a.upcase! # 危険　変数まるごと変えてしまう
 a.upcase # まだ代用が効く。
+```
 
-# 値を返すものが文
+- 値を返すものが文
+
+```
 a = # 代入できる
 if true
     '心です'
 else
     '寺田です'
 end
+```
 
-# requireは
-# 組み込みライブラリでないときには入れる。
+- requireは
+組み込みライブラリでないときには入れる。
 
-# puts print p pp メソッドの違い
-# p.81でみる
+- puts print p pp メソッドの違い
+p.81でみる
 
-# pは出力後の改行しない
-# putたちは改行する
+pは出力後の改行しない
+putたちは改行する
 
 # ハッシュ
 
