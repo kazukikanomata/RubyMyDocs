@@ -75,9 +75,45 @@ putたちは改行する
 
 # ハッシュ
 
+```
+hash = {ruby:"rails",python:"Django",php:"cakePHP"}
+hash[:java] = "Spring" // add value
+hash.delete(:ruby) // delete value
+
+```
+
+参考：ハッシュの便利メソッド
+URL https://qiita.com/jnchito/items/02ba8aad634a6bd8a2f6
 
 
 
 
 
-# moduleを理解する
+
+
+# インデントを理解
+
+
+# クラスとモジュールの使い分けの仕方を知る。
+
+クラスはオブジェクトになることができる。インスタンス化できる
+- インスタンスメソッドやクラスメソッドを格納できる。
+
+モジュールはインスタンス化能力は持たないが、メソッドを格納できる。
+
+
+
+
+
+
+定数は、モジュール経由して呼び出すことができる。
+
+```
+module Mod
+    Version = "2.3.0"
+end
+
+# 呼び出し
+Mod::Verison 
+```
+
