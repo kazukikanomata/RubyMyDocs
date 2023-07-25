@@ -117,3 +117,5 @@ end
 Mod::Verison 
 ```
 
+URL: https://pikawaka.com/ruby/class
+
