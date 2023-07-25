@@ -1,0 +1,77 @@
+
+{
+    "version": "0",
+    "id": "66a7a279-5f92-971c-6d3e-c92da0950992",
+    "detail-type": "Inspector2 Finding",
+    "source": "aws.inspector2",
+    "account": "111122223333",
+    "time": "2023-01-19T22:46:15Z",
+    "region": "us-east-1",
+    "resources": ["i-0c2a343f1948d5205"],
+    "detail": {
+        "awsAccountId": "111122223333",
+        "description": "\n It was discovered that the sound subsystem in the Linux kernel contained a\n race condition in some situations. A local attacker could use this to cause\n a denial of service (system crash).",
+        "exploitAvailable": "YES",
+        "exploitabilityDetails": {
+            "lastKnownExploitAt": "Oct 24, 2022, 11:08:59 PM"
+        },
+        "findingArn": "arn:aws:inspector2:us-east-1:111122223333:finding/FINDING_ID",
+        "firstObservedAt": "Jan 19, 2023, 10:46:15 PM",
+        "fixAvailable": "YES",
+        "lastObservedAt": "Jan 19, 2023, 10:46:15 PM",
+        "packageVulnerabilityDetails": {
+            "cvss": [{
+                "baseScore": 4.7,
+                "scoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                "source": "NVD",
+                "version": "3.1"
+            }],
+            "referenceUrls": ["https://lore.kernel.org/all/CAFcO6XN7JDM4xSXGhtusQfS2mSBcx50VJKwQpCq=WeLt57aaZA@mail.gmail.com/", "https://ubuntu.com/security/notices/USN-5792-1", "https://ubuntu.com/security/notices/USN-5791-2", "https://ubuntu.com/security/notices/USN-5791-1", "https://ubuntu.com/security/notices/USN-5793-2", "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8423f0b6d513b259fdab9c9bf4aaa6188d054c2d", "https://ubuntu.com/security/notices/USN-5793-1", "https://ubuntu.com/security/notices/USN-5792-2", "https://ubuntu.com/security/notices/USN-5791-3", "https://ubuntu.com/security/notices/USN-5793-4", "https://ubuntu.com/security/notices/USN-5793-3", "https://git.kernel.org/linus/8423f0b6d513b259fdab9c9bf4aaa6188d054c2d(6.0-rc5)", "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3303"],
+            "relatedVulnerabilities": [],
+            "source": "UBUNTU_CVE",
+            "sourceUrl": "https://people.canonical.com/~ubuntu-security/cve/2022/CVE-2022-3303.html",
+            "vendorCreatedAt": "Sep 27, 2022, 11:15:00 PM",
+            "vendorSeverity": "medium", 
+            "vulnerabilityId": "CVE-2022-3303",
+            "vulnerablePackages": [{
+                "arch": "X86_64",
+                "epoch": 0,
+                "fixedInVersion": "0:5.15.0.1027.31~20.04.16",
+                "name": "linux-image-aws",
+                "packageManager": "OS",
+                "remediation": "apt update && apt install --only-upgrade linux-image-aws",
+                "version": "5.15.0.1026.30~20.04.16"
+            }]
+        },
+        "remediation": {
+            "recommendation": {
+                "text": "None Provided"
+            }
+        },
+        "resources": [{
+            "details": {
+                "awsEc2Instance": {
+                    "iamInstanceProfileArn": "arn:aws:iam::111122223333:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                    "imageId": "ami-0b7ff1a8d69f1bb35",
+                    "ipV4Addresses": ["172.31.85.212", "44.203.45.27"],
+                    "ipV6Addresses": [],
+                    "launchedAt": "Jan 19, 2023, 7:53:14 PM",
+                    "platform": "UBUNTU_20_04",
+                    "subnetId": "subnet-8213f2a3",
+                    "type": "t2.micro",
+                    "vpcId": "vpc-ab6650d1"
+                }
+            },
+            "id": "i-0c2a343f1948d5205",
+            "partition": "aws",
+            "region": "us-east-1",
+            "type": "AWS_EC2_INSTANCE"
+        }],
+        "severity": "MEDIUM",
+        "status": "ACTIVE",
+        "title": "CVE-2022-3303 - linux-image-aws",
+        "type": "PACKAGE_VULNERABILITY",
+        "updatedAt": "Jan 19, 2023, 10:46:15 PM"
+    }
+}
+    
