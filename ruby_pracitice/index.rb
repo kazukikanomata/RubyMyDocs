@@ -12,6 +12,8 @@
 
 # key valueの扱い方
 
+
+
 ary = Array["赤","青","緑"]
 
 hash = { "MIKE" => 23, "Ken" => 27}
